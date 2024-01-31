@@ -2,6 +2,6 @@
 {
     public class SendMessageResult : BaseResult
     {
-        public List<int> MessageIDs { get; internal set; } = new List<int>();
+        public List<int> MessageIDs { get; set; } = new List<int>();
     }
 }

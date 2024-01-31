@@ -2,8 +2,8 @@
 {
     public class BaseResult
     {
-        public string? ErrorCode { get; internal set; } = "OK";
-        public string? ErrorMessage { get; internal set; }        
-        public bool IsSuccess { get; internal set; }
+        public string? ErrorCode { get; set; } = "OK";
+        public string? ErrorMessage { get; set; }        
+        public bool IsSuccess { get; set; }
     }
 }

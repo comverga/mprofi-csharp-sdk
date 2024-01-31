@@ -35,7 +35,7 @@ namespace Mprofi.API.V10
                 {
                     Apikey = Apikey,
                     Recipient = message.Recipient,
-                    Message = message.Recipient,
+                    Message = message.Message,
                     Reference = message.Reference,
                     Encoding = message.Encoding,
                     Date = message.Date,
@@ -219,9 +219,9 @@ namespace Mprofi.API.V10
 
     internal class SendErrorResponse
     {
-        public string? Detail { get; internal set; }
-        public string? ErrorCode { get; internal set; }
-        public string? ErrorMessage { get; internal set; }
+        public string? Detail { get; set; }
+        public string? ErrorCode { get; set; }
+        public string? ErrorMessage { get; set; }
 
     }
 }
